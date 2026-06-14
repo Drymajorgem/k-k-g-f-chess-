@@ -87,6 +87,42 @@ header p{
 .community{
     background:#8e24aa;
 }
+```css
+.pinned{
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    color:white;
+    border:none;
+    box-shadow:0 0 20px rgba(255,152,0,0.4);
+}
+
+.pinned .date{
+    color:white;
+}
+
+.pinned .content{
+    color:white;
+}
+```
+
+Then add this section immediately below the `<header>` and before the other announcements:
+
+```html
+<div class="announcement pinned">
+    <div class="badge important">📌 Pinned Announcement</div>
+    <div class="date">June 14, 2026</div>
+    <div class="title">Welcome to K-K-G-F</div>
+    <div class="content">
+        Welcome to the official K-K-G-F Chess Team website.
+        Our goal is to compete in tournaments and events,
+        achieve success together, and use opportunities we
+        earn to help chess players who need support the most.
+
+        Stay tuned for team battles, tournaments, training
+        sessions, and important community updates.
+    </div>
+</div>
+```
+    
 
 footer{
     text-align:center;
